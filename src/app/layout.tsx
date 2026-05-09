@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "Gemini File Search Demo",
+  description: "Multimodal RAG with metadata filters and page citations using the Gemini File Search tool.",
 };
 
 export default function RootLayout({
