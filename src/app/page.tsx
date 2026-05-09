@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { StoreSelector } from "@/components/file-search/store-selector";
 import { UploadForm } from "@/components/file-search/upload-form";
@@ -11,6 +12,13 @@ export default function Home() {
 
   return (
     <main className="mx-auto w-full max-w-5xl flex-1 px-6 py-10">
+      <nav className="mb-8 flex items-center gap-4 text-xs font-mono uppercase tracking-wider">
+        <span className="rounded bg-foreground px-2 py-1 text-background">File Search</span>
+        <Link href="/design" className="text-muted-foreground hover:text-foreground">
+          Design Studio →
+        </Link>
+      </nav>
+
       <header className="mb-8">
         <p className="text-xs font-mono uppercase tracking-wider text-muted-foreground">
           Gemini File Search · Multimodal RAG
